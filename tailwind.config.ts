@@ -22,7 +22,21 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          glow: "hsl(var(--primary-glow))",
         },
+        pro: {
+          DEFAULT: "hsl(var(--pro))",
+          foreground: "hsl(var(--pro-foreground))",
+        },
+        win: {
+          strong: "hsl(var(--win-strong))",
+          soft: "hsl(var(--win-soft))",
+        },
+        loss: {
+          strong: "hsl(var(--loss-strong))",
+          soft: "hsl(var(--loss-soft))",
+        },
+        neutral: "hsl(var(--neutral))",
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
