@@ -2,71 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-/* HSMeta — Dark premium esports theme. All colors HSL. */
+/* HS TourneyHelper — Soft dark slate theme. All colors HSL. */
 
 @layer base {
   :root {
     /* Base surfaces */
-    --background: 222 33% 7%;
-    --foreground: 40 30% 96%;
+    --background: 220 18% 8%;
+    --foreground: 215 20% 93%;
 
-    --card: 222 28% 10%;
-    --card-foreground: 40 30% 96%;
+    --card: 220 15% 12%;
+    --card-foreground: 215 20% 93%;
 
-    --popover: 222 32% 9%;
-    --popover-foreground: 40 30% 96%;
+    --popover: 220 18% 10%;
+    --popover-foreground: 215 20% 93%;
 
-    /* Premium amber accent */
-    --primary: 38 92% 55%;
-    --primary-foreground: 222 47% 8%;
-    --primary-glow: 42 100% 65%;
+    /* Soft steel-blue accent */
+    --primary: 213 60% 56%;
+    --primary-foreground: 215 40% 98%;
+    --primary-glow: 213 65% 66%;
 
-    --secondary: 222 22% 16%;
-    --secondary-foreground: 40 30% 96%;
+    --secondary: 220 14% 17%;
+    --secondary-foreground: 215 20% 93%;
 
-    --muted: 222 20% 14%;
-    --muted-foreground: 220 12% 65%;
+    --muted: 220 13% 15%;
+    --muted-foreground: 215 10% 58%;
 
-    --accent: 222 25% 18%;
-    --accent-foreground: 40 30% 96%;
+    --accent: 220 15% 18%;
+    --accent-foreground: 215 20% 93%;
 
-    --destructive: 0 72% 55%;
-    --destructive-foreground: 40 30% 96%;
+    --destructive: 0 65% 52%;
+    --destructive-foreground: 215 20% 93%;
 
-    --border: 222 20% 18%;
-    --input: 222 22% 16%;
-    --ring: 38 92% 55%;
+    --border: 220 14% 20%;
+    --input: 220 14% 17%;
+    --ring: 213 60% 56%;
 
     /* Matchup semantics */
-    --win-strong: 142 70% 45%;
-    --win-soft: 142 50% 40%;
-    --neutral: 220 10% 50%;
-    --loss-soft: 12 65% 50%;
-    --loss-strong: 0 75% 55%;
+    --win-strong: 142 60% 40%;
+    --win-soft: 142 45% 36%;
+    --neutral: 215 8% 46%;
+    --loss-soft: 12 58% 46%;
+    --loss-strong: 0 65% 50%;
 
-    /* PRO/gold */
-    --pro: 38 92% 55%;
-    --pro-foreground: 222 47% 8%;
+    /* Accent */
+    --pro: 213 60% 56%;
+    --pro-foreground: 215 40% 98%;
 
     /* Gradients & shadows */
-    --gradient-primary: linear-gradient(135deg, hsl(38 92% 55%), hsl(28 95% 60%));
-    --gradient-hero: radial-gradient(ellipse at top, hsl(38 92% 55% / 0.18), transparent 60%),
-                     radial-gradient(ellipse at bottom left, hsl(220 80% 40% / 0.12), transparent 50%);
-    --gradient-card: linear-gradient(180deg, hsl(222 28% 11%), hsl(222 30% 8%));
-    --shadow-glow: 0 0 40px -10px hsl(38 92% 55% / 0.45);
-    --shadow-elegant: 0 20px 50px -20px hsl(0 0% 0% / 0.6);
-    --shadow-card: 0 4px 20px -8px hsl(0 0% 0% / 0.5);
+    --gradient-primary: linear-gradient(135deg, hsl(213 60% 56%), hsl(228 62% 60%));
+    --gradient-hero: radial-gradient(ellipse at top, hsl(213 60% 56% / 0.10), transparent 55%),
+                     radial-gradient(ellipse at bottom left, hsl(240 45% 32% / 0.07), transparent 50%);
+    --gradient-card: linear-gradient(180deg, hsl(220 15% 13%), hsl(220 16% 9%));
+    --shadow-glow: 0 0 32px -12px hsl(213 60% 56% / 0.30);
+    --shadow-elegant: 0 20px 48px -20px hsl(0 0% 0% / 0.45);
+    --shadow-card: 0 4px 18px -8px hsl(0 0% 0% / 0.38);
 
     --radius: 0.75rem;
 
-    --sidebar-background: 222 30% 8%;
-    --sidebar-foreground: 40 20% 90%;
-    --sidebar-primary: 38 92% 55%;
-    --sidebar-primary-foreground: 222 47% 8%;
-    --sidebar-accent: 222 22% 14%;
-    --sidebar-accent-foreground: 40 30% 96%;
-    --sidebar-border: 222 20% 16%;
-    --sidebar-ring: 38 92% 55%;
+    --sidebar-background: 220 18% 8%;
+    --sidebar-foreground: 215 18% 88%;
+    --sidebar-primary: 213 60% 56%;
+    --sidebar-primary-foreground: 215 40% 98%;
+    --sidebar-accent: 220 15% 16%;
+    --sidebar-accent-foreground: 215 20% 93%;
+    --sidebar-border: 220 14% 18%;
+    --sidebar-ring: 213 60% 56%;
   }
 }
 
@@ -83,8 +83,8 @@
     @apply bg-background text-foreground antialiased;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     background-image:
-      radial-gradient(circle at 15% 0%, hsl(38 92% 55% / 0.06), transparent 40%),
-      radial-gradient(circle at 85% 100%, hsl(220 80% 40% / 0.06), transparent 40%);
+      radial-gradient(circle at 15% 0%, hsl(213 60% 56% / 0.04), transparent 40%),
+      radial-gradient(circle at 85% 100%, hsl(240 45% 32% / 0.05), transparent 40%);
     background-attachment: fixed;
   }
 

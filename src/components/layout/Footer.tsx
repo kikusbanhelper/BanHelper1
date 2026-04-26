@@ -12,11 +12,13 @@ export const Footer = () => {
                 <Sword className="h-5 w-5 text-primary-foreground" strokeWidth={2.5} />
               </div>
               <span className="text-lg font-bold tracking-tight">
-                HS<span className="text-gradient-primary">Meta</span>
+                HS <span className="text-gradient-primary">TourneyHelper</span>
               </span>
             </Link>
             <p className="mt-3 text-sm text-muted-foreground max-w-xs">
-              Турнирный инструмент Hearthstone: матчапы, баны, мета.
+              Инструмент для подготовки к Hearthstone-турнирам в формате Conquest.
+              Матрица матчапов по актуальному патчу, умный расчёт банов через BanHelper
+              и обзор турнирной меты — всё в одном месте, бесплатно.
             </p>
           </div>
 
@@ -24,7 +26,7 @@ export const Footer = () => {
             <h4 className="text-sm font-semibold mb-3">Навигация</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><Link to="/matchups" className="hover:text-foreground transition-colors">Matchups</Link></li>
-              <li><Link to="/ban-tool" className="hover:text-foreground transition-colors">Ban Tool</Link></li>
+              <li><Link to="/ban-tool" className="hover:text-foreground transition-colors">BanHelper</Link></li>
               <li><Link to="/news" className="hover:text-foreground transition-colors">News</Link></li>
               <li><Link to="/contact" className="hover:text-foreground transition-colors">Contact</Link></li>
             </ul>
@@ -55,8 +57,9 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-border/60 text-xs text-muted-foreground">
-          © 2026 HSMeta. Не аффилирован с Blizzard Entertainment. Hearthstone является торговой маркой Blizzard.
+        <div className="mt-10 pt-6 border-t border-border/60 text-xs text-muted-foreground flex flex-col gap-1">
+          <span>© 2026 HS BanHelper. Все права защищены.</span>
+          <span>Hearthstone® — зарегистрированная торговая марка Blizzard Entertainment. Не аффилирован с Blizzard Entertainment.</span>
         </div>
       </div>
     </footer>

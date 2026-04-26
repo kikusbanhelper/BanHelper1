@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 const NAV = [
   { to: "/matchups", label: "Matchups" },
-  { to: "/ban-tool", label: "Ban Tool" },
+  { to: "/ban-tool", label: "BanHelper" },
   { to: "/news", label: "News" },
   { to: "/contact", label: "Contact" },
 ];
@@ -17,15 +17,18 @@ export const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/80 backdrop-blur-xl">
-      <div className="container mx-auto flex h-16 items-center justify-between gap-4 px-4">
-        <Link to="/" className="flex items-center gap-2 group" aria-label="HSMeta home">
+      <div className="container mx-auto flex h-16 items-center gap-4 px-4">
+        <Link to="/" className="flex items-center gap-2 group shrink-0" aria-label="HS TourneyHelper home">
           <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-primary shadow-glow transition-transform group-hover:scale-105">
             <Sword className="h-5 w-5 text-primary-foreground" strokeWidth={2.5} />
           </div>
           <span className="text-lg font-bold tracking-tight">
-            HS<span className="text-gradient-primary">Meta</span>
+            HS <span className="text-gradient-primary">TourneyHelper</span>
           </span>
         </Link>
+
+        {/* Spacer — pushes nav to the right */}
+        <div className="flex-1" />
 
         <nav className="hidden md:flex items-center gap-1">
           {NAV.map((item) => (
@@ -45,7 +48,7 @@ export const Header = () => {
             <Link to="/profile">Login</Link>
           </Button>
           <Button asChild size="sm" className="bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-glow">
-            <Link to="/pro">Upgrade to PRO</Link>
+            <Link to="/pro">Расширенный доступ</Link>
           </Button>
         </div>
 
@@ -87,7 +90,7 @@ export const Header = () => {
               className="flex-1 bg-gradient-primary text-primary-foreground"
               onClick={() => setOpen(false)}
             >
-              <Link to="/pro">Upgrade to PRO</Link>
+              <Link to="/pro">Расширенный доступ</Link>
             </Button>
           </div>
         </nav>
